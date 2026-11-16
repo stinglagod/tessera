@@ -1,0 +1,13 @@
+[package]
+name = "tessera"
+version = "0.2.1"
+edition = "2021"
+description = "Compile design tokens (JSON) into CSS, Swift and Kotlin, and check colour contrast"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
